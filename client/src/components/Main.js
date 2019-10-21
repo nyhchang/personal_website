@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import { Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import About from './About';
+import Work from './Work';
+import Projects from './Projects';
+import Contact from './Contact';
 
 export default class Main extends Component {
   render() {
     return (
-      <div>
-        <Card>
-          <CardBody>
-            <CardTitle>Test Title</CardTitle>
-            <CardSubtitle>Test Subtitle</CardSubtitle>
-            <CardText>Test Text</CardText>
-          </CardBody>
-        </Card>
-      </div>
+        <div id='main-content'>
+          <About />
+          <Work />
+          <Projects />
+          <Contact />
+        </div>
     )
   }
 }

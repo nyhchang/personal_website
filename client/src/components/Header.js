@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
-import { Nav, Button, Navbar, NavbarBrand } from 'reactstrap';
-import NavItem from 'reactstrap/es/NavItem';
-import NavLink from 'reactstrap/es/NavLink';
+import { Nav, Navbar, NavbarBrand, NavItem, NavLink} from 'reactstrap';
 
 export default class Header extends Component {
   render() {
     return (
-      <Navbar color='light' expand='sm'>
-        <NavbarBrand>Nathan Chang</NavbarBrand>
-        <Nav>
+      <Navbar id='mainNav' color='dark' expand='sm'>
+        <NavbarBrand id='mainName'>Nathan Chang</NavbarBrand>
+        <Nav id='sidebar' className='ml-auto'>
           <NavItem>
-            <NavLink>Main</NavLink>
+            <NavLink>About Me</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>About</NavLink>
+            <NavLink>Projects</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Contact Me</NavLink>
+            <NavLink>Contact</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink>Resume</NavLink>
           </NavItem>
         </Nav>
       </Navbar>
