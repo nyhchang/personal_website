@@ -8,16 +8,16 @@ export default class Header extends Component {
         <NavbarBrand id='mainName'>Nathan Chang</NavbarBrand>
         <Nav id='sidebar' className='ml-auto'>
           <NavItem>
-            <NavLink>About Me</NavLink>
+            <NavLink href='#'>About Me</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Projects</NavLink>
+            <NavLink href='#'>Projects</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Contact</NavLink>
+            <NavLink href='#'>Contact</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Resume</NavLink>
+            <NavLink href='#'>Resume</NavLink>
           </NavItem>
         </Nav>
       </Navbar>

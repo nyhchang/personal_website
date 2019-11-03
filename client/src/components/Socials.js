@@ -4,7 +4,7 @@ export default class Contact extends Component {
   render() {
     return (
         <section>
-          Add buttons for email, phone, and github.
+          Social media icon area
         </section>
     )
   }

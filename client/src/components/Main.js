@@ -3,6 +3,7 @@ import About from './About';
 import Work from './Work';
 import Projects from './Projects';
 import Contact from './Contact';
+import Socials from './Socials';
 
 export default class Main extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class Main extends Component {
           <Work />
           <Projects />
           <Contact />
+          <Socials />
         </div>
     )
   }
