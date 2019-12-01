@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+#### Remember to install Ruby and install SASS with
+##### `gem install sass`
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,18 +1,18 @@
-#mainNav {
+#mainNav{
   color: white;
   padding: 0;
   height: 50px;
 }
 
-#sidebar {
+#sidebar{
   height: 100%;
 }
 
-.hide {
+.hide{
   display: none !important;
 }
 
-.nav-item {
+.nav-item{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,16 +23,14 @@
   background-color: #464f59;
 }
 
-.nav-link {
+.nav-link{
   color: white;
 }
 
-.nav-link:hover {
+.nav-link:hover{
   color: white;
 }
 
 .navbar-brand {
   padding-left: 20px;
 }
-
-/*# sourceMappingURL=App.css.map */

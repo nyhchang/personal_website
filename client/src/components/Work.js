@@ -51,9 +51,9 @@ export default class Work extends Component {
             </Nav>
             <TabContent activeTab={this.state.activeTab}>
               <TabPane tabId='1'>
-                <CardTitle>Martindale-Nolo - Front End Development
-                  Intern </CardTitle>
-                <CardSubtitle>September 2019 - Present</CardSubtitle>
+                <CardTitle><strong>Martindale-Nolo - Front End Development
+                  Intern</strong> </CardTitle>
+                <CardSubtitle><strong>September 2019 - Present</strong></CardSubtitle>
                 <CardBody>
                   <ul>
                     <li>
@@ -73,22 +73,26 @@ export default class Work extends Component {
                 </CardBody>
               </TabPane>
               <TabPane tabId='2'>
-                <p><strong>ISE Labs - Software Contractor</strong></p>
-                <p><strong>April 2019 - August 2019</strong></p>
-                <p>Developed a windows application that validated an excel sheet
-                  with specific conditions. Reports
-                  errors and allows user to edit in app. </p>
-                <p>Developing a Trip Ticket Tracker, which allows a user to drag
-                  and drop an excel into the application
-                  to import and update data in a SQL server. </p>
-                <p>Technologies: C#, .NET, WPF, SQL Server </p>
+                <CardTitle><strong>ISE Labs - Software Contractor</strong></CardTitle>
+                <CardSubtitle><strong>April 2019 - August 2019</strong></CardSubtitle>
+                <CardBody>
+                  <p>Developed a windows application that validated an excel sheet
+                    with specific conditions. Reports
+                    errors and allows user to edit in app. </p>
+                  <p>Developing a Trip Ticket Tracker, which allows a user to drag
+                    and drop an excel into the application
+                    to import and update data in a SQL server. </p>
+                  <p>Technologies: C#, .NET, WPF, SQL Server </p>
+                </CardBody>
               </TabPane>
               <TabPane tabId='3'>
-                <p><strong>ATUM Bio - Research Associate</strong></p>
-                <p><strong>September 2015 - September 2018</strong></p>
-                <p>Analyzed protein expression levels in E.Coli and yeast.
-                  Developed and conducted assays for measurement of specific
-                  activity in expressed protein. </p>
+                <CardTitle><strong>ATUM Bio - Research Associate</strong></CardTitle>
+                <CardSubtitle><strong>September 2015 - September 2018</strong></CardSubtitle>
+                <CardBody>
+                  <p>Analyzed protein expression levels in E.Coli and yeast.
+                    Developed and conducted assays for measurement of specific
+                    activity in expressed protein. </p>
+                </CardBody>
               </TabPane>
             </TabContent>
           </div>

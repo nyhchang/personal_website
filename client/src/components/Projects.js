@@ -1,16 +1,38 @@
 import React, { Component } from 'react';
+
 import {
     Card,
     CardTitle,
     CardSubtitle,
-    CardBody
+    CardBody,
 } from 'reactstrap';
+
+import classnames from 'classnames';
+
+
 export default class Projects extends Component {
+  constructor(props){
+    super(props);
+    this.state = { activeCard: 1 }
+  }
+
+  changeCard = (number, e) => {
+    e.preventDefault();
+    let newCard = this.state.activeCard + number;
+    if (newCard < 1){
+      newCard = 3;
+    }
+    else if (newCard > 3){
+      newCard = 1;
+    }
+    this.setState({activeCard: newCard});
+  };
+
   render() {
     return (
         <section>
           <title>Projects</title>
-          <Card>
+          <Card className={`carouselItem ${classnames({hide: this.state.activeCard !== 1})}`}>
             <CardTitle>FGODex</CardTitle>
             <CardSubtitle>2018 - Present</CardSubtitle>
             <CardSubtitle>Technologies: <em>React.js, Node.js, Express, Redux, MongoDB</em></CardSubtitle>​
@@ -20,7 +42,7 @@ export default class Projects extends Component {
               resources necessary to evolve their units
             </CardBody>
           </Card>
-          <Card>
+          <Card className={`carouselItem ${classnames({hide: this.state.activeCard !== 2})}`}>
             <CardTitle>Stormwater Application</CardTitle>
             <CardSubtitle>2019</CardSubtitle>
             <CardSubtitle>Technologies: <em>Python, PyQT5, QGIS</em></CardSubtitle>​
@@ -30,7 +52,7 @@ export default class Projects extends Component {
               will define the flow of water based on a user defined location
             </CardBody>
           </Card>
-          <Card>
+          <Card className={`carouselItem ${classnames({hide: this.state.activeCard !== 3})}`}>
             <CardTitle>Tester Booking</CardTitle>
             <CardSubtitle>2018</CardSubtitle>
             <CardSubtitle>Technologies: <em>React Native</em></CardSubtitle>​
@@ -40,6 +62,8 @@ export default class Projects extends Component {
               time blocks and tester resource limitations.
             </CardBody>
           </Card>
+          <button onClick={(e) => this.changeCard(-1, e)}>&#60;</button>
+          <button onClick={(e) => this.changeCard(1, e)}>&#62;</button>
         </section>
     )
   }
