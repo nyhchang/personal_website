@@ -1,7 +1,26 @@
-#mainNav{
+$header-color: #343a40;
+$app-background-color: #53657E;
+$card-background-color: #3A4454;
+
+#main-content{
+  width: 100%;
+  margin: auto;
+}
+
+.About{
+  padding: 0 10%;
+  background-color: $header-color;
   color: white;
-  padding: 0;
-  height: 50px;
+  h1{
+    font-size: 72px;
+    font-weight: 600;
+    line-height: (72*1.5)px;
+
+  }
+}
+
+.App{
+  background-color: #53687E;
 }
 
 #sidebar{
@@ -33,4 +52,17 @@
 
 .navbar-brand {
   padding-left: 20px;
+}
+
+.card{
+  width: 60%;
+  overflow: hidden;
+  margin-bottom: 50px;
+  padding: 12px;
+  background-color: $card-background-color;
+  .card-title{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+  }
 }

@@ -7,8 +7,15 @@ module.exports = function(grunt) {
                     'src/styles/App.css' : 'src/sass/App.scss'
                 }
             }
+        },
+        watch: {
+            css: {
+                files: 'src/sass/*.scss',
+                tasks: ['sass']
+            }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('dev',['sass']);
 }

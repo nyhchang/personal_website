@@ -26,33 +26,33 @@ export default class Work extends Component {
 
   render() {
     return (
-        <Card>
+        <Card className='Work'>
           <CardTitle>Work History</CardTitle>
           <div>
             <Nav tabs>
               <NavItem>
                 <NavLink className={classnames({active: this.state.activeTab === '1'})}
                          onClick={() => {this.changeTab('1')}} >
-                  1
+                  InternetBrands
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className={classnames({active: this.state.activeTab === '2'})}
                          onClick={() => {this.changeTab('2')}} >
-                  2
+                  ISE Labs
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className={classnames({active: this.state.activeTab === '3'})}
                          onClick={() => {this.changeTab('3')}} >
-                  3
+                  ATUM
                 </NavLink>
               </NavItem>
             </Nav>
             <TabContent activeTab={this.state.activeTab}>
               <TabPane tabId='1'>
-                <CardTitle><strong>Martindale-Nolo - Front End Development
-                  Intern</strong> </CardTitle>
+                <CardTitle>InternetBrands (Nolo) - Front End Development
+                  Intern</CardTitle>
                 <CardSubtitle><strong>September 2019 - Present</strong></CardSubtitle>
                 <CardBody>
                   <ul>
@@ -73,7 +73,7 @@ export default class Work extends Component {
                 </CardBody>
               </TabPane>
               <TabPane tabId='2'>
-                <CardTitle><strong>ISE Labs - Software Contractor</strong></CardTitle>
+                <CardTitle>ISE Labs - Software Contractor</CardTitle>
                 <CardSubtitle><strong>April 2019 - August 2019</strong></CardSubtitle>
                 <CardBody>
                   <p>Developed a windows application that validated an excel sheet
@@ -86,7 +86,7 @@ export default class Work extends Component {
                 </CardBody>
               </TabPane>
               <TabPane tabId='3'>
-                <CardTitle><strong>ATUM Bio - Research Associate</strong></CardTitle>
+                <CardTitle>ATUM Bio - Research Associate</CardTitle>
                 <CardSubtitle><strong>September 2015 - September 2018</strong></CardSubtitle>
                 <CardBody>
                   <p>Analyzed protein expression levels in E.Coli and yeast.

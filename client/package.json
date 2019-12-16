@@ -7,14 +7,17 @@
     "classnames": "^2.2.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^3.3.0",
     "reactstrap": "^8.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch-react": "npm start",
+    "watch-css": "grunt watch",
+    "watch": "concurrently \"npm:watch-*\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,11 +35,14 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.0.1",
     "grunt": "^1.0.4",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-sass": "^3.1.0",
     "load-grunt-tasks": "^5.1.0",
     "node-sass": "^4.13.0",
+    "npm-watch": "^0.6.0",
     "react-social-icons": "^4.1.0"
   }
 }

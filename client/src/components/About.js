@@ -1,30 +1,22 @@
 import React, { Component } from 'react';
-import {
-    Card,
-    CardTitle,
-    CardBody,
-} from 'reactstrap'
 
 export default class About extends Component {
   render() {
     return (
-        <Card>
-          <CardTitle>Nathan Chang</CardTitle>
-          <CardBody>
-            <p>I'm an up and coming web developer, looking to build useful, functional, and compact websites. I initially graduated from Cal Poly
-              San Luis Obispo with a B.S in Biochemistry, but after a couple years in the lab, found my passion in software. I was then accepted to
-              Oregon State University's Computer Science program. I graduated from Oregon State University in 2019 with a B.S in Computer Science,
-              and am currently building my career looking for work and internships. </p>
-            <p>Technologies:</p>
-            <ul>
-              <li>Javascript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-            </ul>
-          </CardBody>
-        </Card>
+        <div className='About'>
+          <h1>Nathan Chang</h1>
+          <p>Up and coming web developer, building useful, functional, and compact websites.</p>
+          <ul>
+            <li className='location'>Location: <span>California Bay Area</span></li>
+            <li className='languages'>Languages:
+              <ul>
+                <li>Fluent: HTML, CSS, js</li>
+                <li>Some experience: React, Node, python</li>
+                <li>Dabbled in: PHP, C#</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
     )
   }
 }

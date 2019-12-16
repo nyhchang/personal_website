@@ -30,7 +30,7 @@ export default class Projects extends Component {
 
   render() {
     return (
-        <section>
+        <section className='Projects'>
           <title>Projects</title>
           <Card className={`carouselItem ${classnames({hide: this.state.activeCard !== 1})}`}>
             <CardTitle>FGODex</CardTitle>
